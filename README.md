@@ -1,3 +1,4 @@
+<div style="text-align:center;">
 # Comparative Analysis of 2D Heat Transfer Modeling Using FEniCS and Physics-Informed Neural Networks (PINNs)
 
 ## Introduction
