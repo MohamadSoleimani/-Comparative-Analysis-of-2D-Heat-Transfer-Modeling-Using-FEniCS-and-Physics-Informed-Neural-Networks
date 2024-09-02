@@ -1,4 +1,5 @@
 <div style="text-align:center;">
+
 # Comparative Analysis of 2D Heat Transfer Modeling Using FEniCS and Physics-Informed Neural Networks (PINNs)
 
 ## Introduction
@@ -72,4 +73,22 @@ PINNs directly embed physical laws within the loss function of neural networks. 
 
 A multi-layer perceptron (MLP) with two input neurons, seven hidden layers with 20 neurons each, and an output layer with one neuron is employed. Equation [2] is used as the loss function of PINN.
 
-The MLP gets \(x\) and \(y\) as input data and obtains temperature (\(T\)) as output. Results of PINN are shown in Figure 2. Ground truth data are shown with `
+The MLP gets \(x\) and \(y\) as input data and obtains temperature (\(T\)) as output. Results of PINN are shown in Figure 2. Ground truth data are shown with `+` in Figure 3. Comparison of PINN and FEniCS is evaluated with the equation below, as shown in Figure 3.
+
+$$
+\text{Error} \% = \frac{T_{\text{PINN}} - T_{\text{FENICS}}}{T_{\text{FENICS}}} \times 100
+$$
+
+Maximum Error in the PINN model is 0.55%, which indicates the acceptable accuracy of the model.
+
+<div style="text-align:center;">
+  <img src="Figures/twod_2.png" alt="PINN Results" width="400" height="300"/>
+  <p><em>Figure 2: PINN Results.</em></p>
+</div>
+
+<div style="text-align:center;">
+  <img src="Figures/twod_3.png" alt="Ground truth data, Comparison of PINN and FEniCS" width="400" height="300"/>
+  <p><em>Figure 3: Ground truth data, Comparison of PINN and FEniCS, and Errors between PINN and FEniCS.</em></p>
+</div>
+
+</div>
