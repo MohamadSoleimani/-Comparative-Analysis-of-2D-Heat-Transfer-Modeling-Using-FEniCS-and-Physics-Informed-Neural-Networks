@@ -61,7 +61,10 @@ $$
 
 The solution of FEniCS is shown in Figure 1.
 
-![FEniCS Solution](Figures/twod_1.png)
+<div style="text-align:center;">
+  <img src="Figures/twod_1.png" alt="FEniCS Solution" width="400" height="300"/>
+  <p><em>Figure 1: FEniCS Solution.</em></p>
+</div>
 *Figure 1: FEniCS Solution.*
 
 ## PINN Inverse Problem
