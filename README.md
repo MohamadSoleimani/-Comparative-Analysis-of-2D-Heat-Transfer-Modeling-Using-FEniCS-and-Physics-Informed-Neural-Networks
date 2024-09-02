@@ -1,4 +1,3 @@
-# fenics2d
 # Comparative Analysis of 2D Heat Transfer Modeling Using FEniCS and Physics-Informed Neural Networks (PINNs)
 
 ## Introduction
@@ -17,47 +16,47 @@ The 2D square-shaped plate with a size of (1 × 1) is considered in this problem
 
 For two-dimensional steady-state conditions with no generation and constant thermal conductivity, the governing equation of this model is:
 
-\[
+$$
 \nabla^2 T = 0
-\]
+$$
 
 In the two-dimensional model, the equation becomes:
 
-\[
+$$
 \frac{\partial^2 T}{\partial x^2} + \frac{\partial^2 T}{\partial y^2} = 0
-\]
+$$
 
 FEniCS is based on the finite element method, which is a general and efficient mathematical machinery for the numerical solution of PDEs. The starting point for the finite element methods is a PDE expressed in variational form. To obtain the variational form of the equation, first multiply the equation by the test function \(v\) and integrate over the boundary (\(\Omega\)):
 
-\[
+$$
 \int_\Omega \nabla^2 T \, dx = 0 \quad (x \in \Omega)
-\]
+$$
 
 Expanding the equation gives:
 
-\[
+$$
 -\int_\Omega \nabla T \cdot \nabla v \, dx + \int_{\partial \Omega} \frac{\partial T}{\partial n} v \, dx = 0 \quad (x \in \Omega)
-\]
+$$
 
 On the convection boundary condition, the right-hand term of the equation becomes:
 
-\[
+$$
 \int_{\partial \Omega} \frac{\partial T}{\partial n} v \, dx = -\int_{\partial \Omega} h(T - T_\infty) v \, dx - \int_{\partial \Omega} q'' v \, dx
-\]
+$$
 
 The variational form of the equation is:
 
-\[
+$$
 a(T, v) = L(T, v)
-\]
+$$
 
-\[
+$$
 a(T, v) = \int_\Omega \nabla T \cdot \nabla v \, dx + \int_{\partial \Omega} hTv \, dx
-\]
+$$
 
-\[
+$$
 L(T, v) = -\int_{\partial \Omega} q'' v \, dx + \int_{\partial \Omega} h T_\infty v \, dx
-\]
+$$
 
 The solution of FEniCS is shown in Figure 1.
 
@@ -72,9 +71,9 @@ A multi-layer perceptron (MLP) with two input neurons, seven hidden layers with 
 
 The MLP gets \(x\) and \(y\) as input data and obtains temperature (\(T\)) as output. Results of PINN are shown in Figure 2. Ground truth data are shown with `+` in Figure 3. Comparison of PINN and FEniCS is evaluated with the equation below, as shown in Figure 3.
 
-\[
+$$
 \text{Error} \% = \frac{T_{\text{PINN}} - T_{\text{FENICS}}}{T_{\text{FENICS}}} \times 100
-\]
+$$
 
 Maximum Error in the PINN model is 0.55%, which indicates the acceptable accuracy of the model.
 
