@@ -1,4 +1,3 @@
-<div align="center">
 
 # Comparative Analysis of 2D Heat Transfer Modeling Using FEniCS and Physics-Informed Neural Networks (PINNs)
 
@@ -10,9 +9,9 @@ In this study, the 2D heat transfer problem is first solved with FEniCS. Afterwa
 
 The 2D square-shaped plate with a size of (1 × 1) is considered in this problem. Boundary conditions in this setup are:
 
-- Constant wall temperature \( T = 400 \, \text{K} \) at \( x = 1 \) (0 < y < 1) and \( x = 0 \) (0 < y < 1)
-- Convection boundary condition \( h = 40 \, \text{W/m}^2 \cdot \text{K} \), \( T_\infty = 300 \, \text{K} \)
-- Constant heat flux \( q'' = 100 \, \text{W/m}^2 \) at \( y = 0 \) (0 < x < 1)
+- Constant wall temperature $\( T = 400 \, \text{K} \) at \( x = 1 \) (0 < y < 1)$ and $\( x = 0 \) (0 < y < 1)$
+- Convection boundary condition $\( h = 40 \, \text{W/m}^2 \cdot \text{K} \)$, $\( T_\infty = 300 \, \text{K} \)$
+- Constant heat flux $\( q'' = 100 \, \text{W/m}^2 \) at \( y = 0 \) (0 < x < 1)$
 
 ## FEniCS Solver
 
