@@ -1,16 +1,3 @@
-<!DOCTYPE HTML>
-<html lang="en">
-<head>
-    <title>Comparative Analysis of 2D Heat Transfer Modeling Using FEniCS and Physics-Informed Neural Networks (PINNs)</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/mc/styles/blogs.css" type="text/css" charset="utf-8" />
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async
-            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-    </script>
-</head>
-<body>
 <h1>Comparative Analysis of 2D Heat Transfer Modeling Using FEniCS and Physics-Informed Neural Networks (PINNs)</h1>
 
 <h2>Introduction</h2>
