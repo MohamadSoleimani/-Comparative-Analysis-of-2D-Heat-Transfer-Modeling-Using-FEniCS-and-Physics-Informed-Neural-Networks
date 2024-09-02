@@ -76,7 +76,7 @@ A multi-layer perceptron (MLP) with two input neurons, seven hidden layers with 
 The MLP gets \(x\) and \(y\) as input data and obtains temperature (\(T\)) as output. Results of PINN are shown in Figure 2. Ground truth data are shown with `+` in Figure 3. Comparison of PINN and FEniCS is evaluated with the equation below, as shown in Figure 3.
 
 $$
-\text{Error} \% = \frac{T_{\text{PINN}} - T_{\text{FENICS}}}{T_{\text{FENICS}}} \times 100
+\text{Error} \ = \frac{T_{\text{PINN}} - T_{\text{FENICS}}}{T_{\text{FENICS}}} \times 100
 $$
 
 Maximum Error in the PINN model is 0.55%, which indicates the acceptable accuracy of the model.
