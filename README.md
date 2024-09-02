@@ -1,4 +1,4 @@
-<div style="text-align:center;">
+<div align="center">
 
 # Comparative Analysis of 2D Heat Transfer Modeling Using FEniCS and Physics-Informed Neural Networks (PINNs)
 
@@ -62,7 +62,7 @@ $$
 
 The solution of FEniCS is shown in Figure 1.
 
-<div style="text-align:center;">
+<div align="center">
   <img src="Figures/twod_1.png" alt="FEniCS Solution" width="400" height="300"/>
   <p><em>Figure 1: FEniCS Solution.</em></p>
 </div>
@@ -81,12 +81,12 @@ $$
 
 Maximum Error in the PINN model is 0.55%, which indicates the acceptable accuracy of the model.
 
-<div style="text-align:center;">
+<div align="center">
   <img src="Figures/twod_2.png" alt="PINN Results" width="400" height="300"/>
   <p><em>Figure 2: PINN Results.</em></p>
 </div>
 
-<div style="text-align:center;">
+<div align="center">
   <img src="Figures/twod_3.png" alt="Ground truth data, Comparison of PINN and FEniCS" width="400" height="300"/>
   <p><em>Figure 3: Ground truth data, Comparison of PINN and FEniCS, and Errors between PINN and FEniCS.</em></p>
 </div>
